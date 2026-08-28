@@ -1,0 +1,19 @@
+# Data Science & Statistical/ML/AI Modeling Core
+pandas==2.2.0
+numpy==1.26.3
+scikit-learn==1.4.0
+xgboost==2.0.3
+shap==0.44.1
+
+# Software Integration & Web API Framework
+fastapi==0.109.0
+uvicorn==0.27.0
+pydantic==2.5.3
+
+# Testing & Quality Assurance
+pytest==8.0.0
+httpx==0.26.0
+
+# Model Serialization & MLOps Tracking
+joblib==1.3.2
+mlflow==2.10.0

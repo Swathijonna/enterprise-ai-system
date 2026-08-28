@@ -1,0 +1,14 @@
+# Ignore Virtual Environment
+venv/
+*.venv/
+
+# Ignore Python Cache Files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore MLflow artifacts
+mlruns/
+
+# Ignore Mac System Files
+.DS_Store
