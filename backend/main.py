@@ -27,7 +27,7 @@ def check_health():
     return {"status":"healthy",
             "service": "AI Integration Gateway",
             "model_loaded": model is not None
-            }
+    }
 @app.post("/predict")
 def predict_churn_risk(payload: CustomerPayload):
     try:
@@ -41,7 +41,7 @@ def predict_churn_risk(payload: CustomerPayload):
         churn_probability = float(model.predict_proba(input_data)[0][1])
         if churn_probability >= 0.7:
             risk_tier ="CRITICAL"
-            recommended_action = "Assig Account Manager immediately."
+            recommended_action = "Assign Account Manager immediately."
         elif churn_probability >= 0.4:
             risk_tier = "MODERATE"
             recommended_action = "Offer promotional retention discount"
